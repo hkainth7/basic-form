@@ -42,6 +42,19 @@ body {
     background-size: cover;
 }
 
+.left-side .error {
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    width: 90%;
+    padding: 10px;
+    background-color: lightcoral;
+    border-radius: 7px;
+}
+
 
 .header {
     text-align: center;
@@ -63,6 +76,7 @@ body {
     font-weight: 400;
     color: whitesmoke;
 }
+
 
 .right-side {
     flex: 0.65;
