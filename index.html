@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/formData.js" defer="defer"></script>
+    <script src="scripts/formValidation.js" defer="defer"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <main class="main">
+            <div class="left-side">
+                <header class="header">
+                    <h1>Welcome</h1>
+                    <p>Tell us a little about your self</p>
+                </header>
+                <div id="error-messages">
+
+                </div>
+            </div>
+            <div class="right-side">
+            
+                <form   action="post"
+                        id="register-form">
+                    
+                    <fieldset class="user-info-container">
+                        <div class="user-name-container">
+                            <div class="user-info">
+                                <label  for="firstName">First Name</label>
+                                <input  type="text"
+                                        name="firstName"
+                                        id="firstName">
+                            </div>
+                            <div class="user-info">
+                                <label  for="lastName">Last Name</label>
+                                <input  type="text"
+                                        name="lastName"
+                                        id="lastName">
+                            </div>
+                            <div class="user-info">
+                                <label  for="email">Email</label>
+                                <input  type="email"
+                                        name="email"
+                                        id="email">
+                            </div>
+                            <div class="user-info">
+                                <label  for="username">Create Username</label>
+                                <input  type="text"
+                                        name="username"
+                                        id="username">
+                            </div>
+                            <div class="user-info">
+                                <label  for="pwd">Create Password</label>
+                                <input  type="password"
+                                        name="pwd"
+                                        id="pwd">
+                            </div>
+                            <div class="user-info">
+                                <label  for="pwd-check">Verify Password</label>
+                                <input  type="password"
+                                        name="pwd-check"
+                                        id="pwd-check">
+                            </div>
+                        </div>
+                        <div class="date-of-birth">
+                            <p>Date of Birth</p>
+                            <div class="dob-options">
+                                <select name="day" id="day">
+                                    <option value="">Day</option>
+                                </select>
+                                <select name="month" id="month">
+                                    <option value="">Month</option>
+                                </select>
+                                <select name="year" id="year">
+                                    <option value="">Year</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="user-address">
+                        <div class="user-address-container">
+                            <div class="user-address">
+                                <label  for="addressLine1">Address Line 1</label>
+                                <input  type="text"
+                                        name="addressLine1"
+                                        id="addressLine1">
+                            </div>
+                            <div class="user-address">
+                                <label  for="city">City</label>
+                                <input  type="text"
+                                        id="city"
+                                        name="city">
+                            </div>
+                            <div class="user-address">
+                                <label  for="postalCode">Postal Code</label>
+                                <input  type="text"
+                                        id="postalCode"
+                                        name="postalCode">
+                            </div>
+                            <div class="user-address">
+                                <label  for="province">Province</label>
+                                <select name="province" 
+                                        id="province">
+                                    
+                                    <option value="null">Select Province</option>
+                                </select>
+                            </div>
+                            <div class="user-address">
+                                <label  for="country">Country</label>
+                                <select name="country" id="country">
+                                    <option value="Canada">Canada</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Complete Registeration" id="submit">
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

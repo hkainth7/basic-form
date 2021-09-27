@@ -1,0 +1,169 @@
+html {
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    font-family: "Lato", sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    background-color: #ddd;
+    height: 95vh;
+    width: 60vw;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.left-side {
+    flex: 0.35;
+    height: 100%;
+    position: relative;
+    background-image: url('../images/travel.jfif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header {
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+
+.header > h1 {
+    color: #333;
+    margin-bottom: 5vh;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header > p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+.right-side {
+    flex: 0.65;
+    height: 100%;
+    overflow: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 30px;
+    font-size: 0.75rem;
+    height: 100%;
+}
+
+fieldset {
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.user-name-container,
+.user-address-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.user-name-container .user-info,
+.user-address-container .user-address {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.user-name-container .user-info label,
+.user-address-container .user-address label,
+.date-of-birth p {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #668395;
+}
+
+.user-name-container .user-info input,
+.user-address-container .user-address input,
+.user-address-container .user-address select {
+    outline: none;
+    border: none;
+    padding: 6px 10px;
+    font-size: 0.65rem;
+}
+
+.user-name-container .user-info input:focus,
+.user-address-container .user-address input:focus,
+.user-address-container .user-address select:focus,
+.dob-options select:focus {
+    outline: 2px solid #668395;
+}
+
+.dob-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dob-options select {
+    padding: 10px 14px;
+    outline: none;
+    border: none;
+    margin-right: 10px;
+    width: 25%;
+    color: grey;
+    font-size: 0.65rem;
+}
+
+.dob-options select:last-child {
+    flex: 1;
+}
+
+.user-address-container .user-address select {
+    color: grey;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    background-color: none;
+    border: none;
+    outline: none;
+    padding: 25px 0;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    border-radius: 7px;
+}
+
+input[type=submit]:hover {
+    background-color: #333;
+    color: white;
+}
