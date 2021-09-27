@@ -3,7 +3,11 @@ const errorMessages = document.getElementById('error-messages');
 
 errorMessages.style.display = 'none';
 
+
+// validate form on form submission
 form.addEventListener('submit', validateForm);
+
+
 
 function validateForm(event) {
 

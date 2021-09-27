@@ -44,7 +44,7 @@ body {
 
 .left-side .error {
     position: absolute;
-    top: 60%;
+    top: 80%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -66,7 +66,7 @@ body {
 }
 
 .header > h1 {
-    color: #333;
+    color: #2d5974;
     margin-bottom: 5vh;
     font-size: 1.7rem;
     font-weight: 700;
@@ -76,7 +76,7 @@ body {
 .header > p {
     font-size: 0.85rem;
     font-weight: 400;
-    color: whitesmoke;
+    color: #2d5974;
 }
 
 
