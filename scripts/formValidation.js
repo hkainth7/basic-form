@@ -22,7 +22,7 @@ function validateForm(event) {
     const city = document.getElementById('city');
     const postalCode = document.getElementById('postalCode');
     const province = document.getElementById('province');
-    const country = document.getElementById('country');
+    
     
     errorMessages.innerHTML = "";
 
