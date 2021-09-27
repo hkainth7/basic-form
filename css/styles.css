@@ -44,15 +44,17 @@ body {
 
 .left-side .error {
     position: absolute;
-    text-align: center;
-    top: 80%;
+    top: 60%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
     width: 90%;
     padding: 10px;
     background-color: lightcoral;
+    opacity: 0.8;
     border-radius: 7px;
+    font-size: 0.8rem;
+    line-height: 1.2;
 }
 
 
