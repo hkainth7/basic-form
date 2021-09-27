@@ -151,7 +151,17 @@ function validateForm(event) {
 
     // validate postal code pattern 
 
-    let regex = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/
+    const regex = /^[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJKLMNPRSTVXY][ -]?\d[ABCEGHJKLMNPRSTVXY]\d$/i
+    let regexObject = RegExp(regex);
+
+    if(!regexObject.test(postalCode.value)){
+        errorMessages.style.display = "block";
+        errorMessages.innerHTML += `<p>Please enter a valid postal code</p>`;
+        postalCode.style.border = "solid red 2px";
+        formDataError = true;
+    } else {
+        postalCode.style.border = 'none';
+    }
 
     if(province.value === 'province'){
         errorMessages.style.display = "block";
